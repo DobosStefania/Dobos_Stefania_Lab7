@@ -3,11 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dobos_Stefania_Lab7.ProductPage"
              Title="ProductPage">
-    <ContentPage.Content>
+    <ContentPage.Content xmlns:local="clr-namespace:Dobos_Stefania_Lab7">
         <StackLayout Margin="20">
             <Editor Placeholder="Enter product name" Margin="20"
  Text="{Binding Description}"
- HeightRequest="50" />
+ HeightRequest="50" >
+                <Editor.Behaviors>
+                    <local:ValidationBehaviour />
+                </Editor.Behaviors>
+            </Editor>
+
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />

@@ -8,8 +8,8 @@
         <Editor Placeholder="Enter the description of the shopping list"
  Text="{Binding Description}"
  HeightRequest="50" />
-            
-            <Grid>
+        <Picker x:Name="ShopPicker" Title="Enter Shop Name"/>
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
